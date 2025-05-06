@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function () {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://bit.ly/44pqgvG"; // Play Store
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://apple.co/3EVumkO"; // App Store
+      } else {
+        // Fallback page
+        document.getElementById("fallback").style.display = "block";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the right store...</p>
+  <div id="fallback" style="display:none;">
+    <p>Please choose your platform:</p>
+    <a href="https://apple.co/3EVumkO">iOS App Store</a><br>
+    <a href="https://bit.ly/44pqgvG">Google Play Store</a>
+  </div>
+</body>
+</html>
