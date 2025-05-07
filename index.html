@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <script>
-    window.onload = function () {
-      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+<a href="https://apps.apple.com/us/app/lulu-online/id6739010114?ls=1">
+  <img src="apple-store-badge.png" alt="Download on the App Store">
+</a>
 
-      if (/android/i.test(userAgent)) {
-        window.location.href = "https://play.google.com/store/apps/details?id=com.akinon.lulushopping&pli=1"; // Play Store
-      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        window.location.href = "https://apps.apple.com/us/app/lulu-online/id6739010114?ls=1"; // App Store
-      } else {
-        // Fallback page
-        document.getElementById("fallback").style.display = "block";
-      }
-    };
-  </script>
-</head>
-<body>
-  <p>Redirecting you to the right store...</p>
-  <div id="fallback" style="display:none;">
-    <p>Please choose your platform:</p>
-    <a href="https://apps.apple.com/us/app/lulu-online/id6739010114?ls=1">iOS App Store</a><br>
-    <a href="https://play.google.com/store/apps/details?id=com.akinon.lulushopping&pli=1">Google Play Store</a>
-  </div>
-</body>
-</html>
+<a href="https://play.google.com/store/apps/details?id=com.akinon.lulushopping&pli=1">
+  <img src="google-play-badge.png" alt="Get it on Google Play">
+</a>
